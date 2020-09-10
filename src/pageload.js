@@ -16,8 +16,26 @@ export default function addcontents() {
     linkItems.appendChild(li);
   }
   linksSection.appendChild(linkItems);
+  // main section
+  const main = document.createElement('main');
+  main.className = 'main';
 
+  const introSection = document.createElement('div');
+  introSection.className = 'introduction-section';
+  const introText = document.createElement('div');
+  introText.className = 'intro-text';
+  const tagline = document.createElement('h1');
+  tagline.textContent = 'ENJOY DELICIOUS FOOD';
+  const supportText = document.createElement('p');
+  supportText.textContent = 'Voted the best restaurant in town';
+  introText.appendChild(tagline);
+  introText.appendChild(supportText);
+  introSection.appendChild(introText);
+  // Introduction image
+  const introImage = document.createElement('div');
+  introImage.className = 'intro-image';
   const content = document.getElementById('content');
   nav.appendChild(linksSection);
   content.appendChild(nav);
+  content.appendChild(introSection);
 }
