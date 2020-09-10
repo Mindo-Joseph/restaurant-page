@@ -1,3 +1,6 @@
+import Plate from './img/plate.jpeg';
+import FramedFood from './img/framedfood.jpg';
+
 export default function addcontents() {
   const nav = document.createElement('nav');
   const logo = document.createElement('h4');
@@ -32,10 +35,34 @@ export default function addcontents() {
   introText.appendChild(supportText);
   introSection.appendChild(introText);
   // Introduction image
+
   const introImage = document.createElement('div');
   introImage.className = 'intro-image';
+  const plate = new Image();
+  plate.src = Plate;
+  introImage.appendChild(plate);
+  introSection.appendChild(introImage);
+  // About section
+  const about = document.createElement('div');
+  about.className = 'about';
+  const framedImage = new Image();
+  framedImage.src = FramedFood;
+  about.appendChild(framedImage);
+  const aboutText = document.createElement('div');
+  aboutText.className = 'about-text';
+  const paragraph = document.createElement('p');
+  paragraph.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+  lobortis, lacus eu ultrices ultrices, nisi leo pretium risus, eu
+  elementum velit erat et metus. Nunc nec placerat erat. Vestibulum
+  interdum eleifend quam, ut pulvinar leo dictum in. Praesent
+  placerat porta mi vel suscipit. Fusce iaculis vulputate sapien id
+  tincidunt. Maecenas lobortis sollicitudin mi ut`;
+  aboutText.appendChild(paragraph);
+  about.appendChild(aboutText);
   const content = document.getElementById('content');
   nav.appendChild(linksSection);
   content.appendChild(nav);
-  content.appendChild(introSection);
+  main.appendChild(introSection);
+  main.appendChild(about);
+  content.appendChild(main);
 }

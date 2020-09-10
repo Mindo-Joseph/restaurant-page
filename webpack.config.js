@@ -15,6 +15,12 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.(png|jpg|jpeg|svg)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ],
   },
 };
