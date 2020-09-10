@@ -1,1 +1,4 @@
-console.log('Hello World');
+import './style.css';
+import addcontents from './pageload';
+
+addcontents();

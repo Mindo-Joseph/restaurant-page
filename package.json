@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -16,10 +18,13 @@
     "url": "https://github.com/Mindo-Joseph/restaurant-page/issues"
   },
   "homepage": "https://github.com/Mindo-Joseph/restaurant-page#readme",
-  "dependencies": {
-    "eslint": "^7.8.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "css-loader": "^4.3.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
