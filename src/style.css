@@ -45,6 +45,36 @@ body {
   text-align: center;
   color: #ffc300;
 }
+.form {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+}
+.menu-group {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 0.75rem;
+}
+footer {
+  text-align: center;
+}
 .about img {
   max-width: 20%;
   margin-right: 3em;

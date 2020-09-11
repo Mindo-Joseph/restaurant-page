@@ -8,6 +8,7 @@ export default function contactPage() {
   content.appendChild(contactdiv);
 
   const messageForm = document.createElement('form');
+  messageForm.className = 'form';
   const name = document.createElement('input');
   name.setAttribute('type', 'text');
   name.setAttribute('name', 'full name');
