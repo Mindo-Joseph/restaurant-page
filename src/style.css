@@ -41,6 +41,10 @@ body {
     align-items: center;
     width: 30%;
 }
+.contact {
+  text-align: center;
+  color: #ffc300;
+}
 .about img {
   max-width: 20%;
   margin-right: 3em;
