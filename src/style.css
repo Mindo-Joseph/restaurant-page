@@ -35,16 +35,19 @@ body {
   padding-left: 3em;
   justify-content: space-evenly;
 }
+
 .about-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
 }
+
 .contact {
   text-align: center;
   color: #ffc300;
 }
+
 .form {
   max-width: 30rem;
   margin: 0 auto;
@@ -52,35 +55,43 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
 .row {
   display: flex;
 }
+
 .column {
   flex: 50%;
 }
+
 .menu-group {
   display: flex;
   flex-direction: column;
 }
+
 .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3em;
 }
+
 .tab-links {
   text-decoration: none;
   color: black;
 }
+
 input {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 0.75rem;
   margin-bottom: 0.75em;
 }
+
 footer {
   text-align: center;
 }
+
 [type=text],
 [type=email],
 select,
@@ -94,6 +105,7 @@ textarea {
   border-radius: 4px;
   font-size: 0.95rem;
 }
+
 /* button */
 .submit-btn {
   display: inline-block;
@@ -111,13 +123,14 @@ textarea {
   font-family: sans-serif;
   font-size: 0.95rem;
 }
+
 .about img {
   max-width: 20%;
   margin-right: 3em;
   max-height: 20%;
 }
 
-.intro-text > * {
+.intro-text>* {
   margin: 0;
 }
 
