@@ -15,6 +15,12 @@
 
 The main goal of this project is for the student to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
 
+## Screenshots
+![Main-Page](./src/img/restaurant-home.png)
+![Contact-Page](src/img/restaurant-contact.png)
+## Live Link
+[Restaurant-Page](https://bit.ly/3mhNdbv)
+
 <!-- INSTALLATION -->
 ## Installation
 
@@ -28,7 +34,7 @@ The main goal of this project is for the student to show the understanding of th
 
 ### Usage
 
-Once you have installed dependencies and run webpack build command  open ```dist/index.html``` in your browser
+Once you have installed dependencies and run webpack build command  open ```dist/index.html``` in your browser 
 
 
 
