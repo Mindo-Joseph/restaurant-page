@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0 1em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3em;
+}
+
+.intro-text {
+  padding-top: 3em;
+}
+
+.about {
+  display: flex;
+  margin-top: 3em;
+  padding-left: 3em;
+  justify-content: space-evenly;
+}
+
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.contact {
+  text-align: center;
+  color: #ffc300;
+}
+
+.form {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+}
+
+.tab-links {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 0.75rem;
+  margin-bottom: 0.75em;
+}
+
+footer {
+  text-align: center;
+}
+
+[type=text],
+[type=email],
+select,
+textarea {
+  display: block;
+  padding: 0.5rem;
+  background: transparent;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* button */
+.submit-btn {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0.25rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #1e6bd6;
+  border-radius: 5px;
+  background: #1e6bd6;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.95rem;
+}
+
+.about img {
+  max-width: 20%;
+  margin-right: 3em;
+  max-height: 20%;
+}
+
+.intro-text > * {
+  margin: 0;
+}
+
+nav h4 {
+  color: #ffc300;
+  font-weight: bold;
+  align-self: flex-start;
+  margin: 0;
+  padding-top: 0.5em;
+  font-size: 1.5em;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links ul li {
+  list-style-type: none;
+  padding-right: 1em;
+}
