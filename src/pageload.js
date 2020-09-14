@@ -1,7 +1,7 @@
 import Plate from './img/plate.jpeg';
 import FramedFood from './img/framedfood.jpg';
 
-export default function addcontents() {
+const addcontents = () => {
   // main section
   const main = document.createElement('main');
   main.className = 'main';
@@ -46,4 +46,5 @@ export default function addcontents() {
   main.appendChild(introSection);
   main.appendChild(about);
   content.appendChild(main);
-}
+};
+export default addcontents;

@@ -1,4 +1,4 @@
-function createmenudishes(arr, prices, parent) {
+const createmenudishes = (arr, prices, parent) => {
   for (let i = 0; i < arr.length; i += 1) {
     const item = document.createElement('div');
     item.className = 'item';
@@ -10,9 +10,9 @@ function createmenudishes(arr, prices, parent) {
     item.appendChild(foodprice);
     parent.appendChild(item);
   }
-}
+};
 
-export default function menuPage() {
+const menuPage = () => {
   const restaurantName = document.createElement('h1');
   restaurantName.textContent = 'Eatery Menu';
 
@@ -21,9 +21,18 @@ export default function menuPage() {
   const leftSide = document.createElement('div');
   leftSide.className = 'column';
 
-  const foods = [['Expresso', 'Americano', 'Machiato', 'Cappuccino'], ['French Fries', 'Italian Pizza', 'Spaghetti', 'Burger'], ['Olong', 'English BreakFast', 'Jasmine Green', 'Emerald Spring', 'King Crimson', 'Blue Crane'], ['Soft Drink', 'Banana Berry', 'Tropical Passion', 'Hawaian Breeze', 'Sunset', 'Apple Crush']];
-  // eslint-disable-next-line max-len
-  const prices = [[3.00, 4.00, 3.50, 5.00], [5.00, 17.00, 12.00, 8.00], [3.00, 4.00, 3.00, 3.00, 5.00, 5.50], [3.00, 2.00, 4.00, 2.00, 3.00, 3.00]];
+  const foods = [
+    ['Expresso', 'Americano', 'Machiato', 'Cappuccino'],
+    ['French Fries', 'Italian Pizza', 'Spaghetti', 'Burger'],
+    ['Olong', 'English BreakFast', 'Jasmine Green', 'Emerald Spring', 'King Crimson', 'Blue Crane'],
+    ['Soft Drink', 'Banana Berry', 'Tropical Passion', 'Hawaian Breeze', 'Sunset', 'Apple Crush'],
+  ];
+  const prices = [
+    [3.00, 4.00, 3.50, 5.00],
+    [5.00, 17.00, 12.00, 8.00],
+    [3.00, 4.00, 3.00, 3.00, 5.00, 5.50],
+    [3.00, 2.00, 4.00, 2.00, 3.00, 3.00],
+  ];
 
   const menugroup1 = document.createElement('div');
   menugroup1.className = 'menu-group';
@@ -58,4 +67,5 @@ export default function menuPage() {
   const content = document.getElementById('content');
   content.appendChild(restaurantName);
   content.appendChild(menuItems);
-}
+};
+export default menuPage;

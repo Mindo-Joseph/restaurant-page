@@ -1,4 +1,4 @@
-export default function contactPage() {
+const contactPage = () => {
   const contactdiv = document.createElement('div');
   contactdiv.className = 'contact';
   const headTag = document.createElement('h1');
@@ -31,4 +31,5 @@ export default function contactPage() {
 
   content.appendChild(messageForm);
   content.appendChild(footer);
-}
+};
+export default contactPage;
