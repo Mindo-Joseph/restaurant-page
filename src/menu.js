@@ -6,7 +6,7 @@ function createmenudishes(arr, prices, parent) {
     foodname.textContent = arr[i];
     item.appendChild(foodname);
     const foodprice = document.createElement('p');
-    foodprice.textContent = prices[i];
+    foodprice.textContent = `USD: ${prices[i]}`;
     item.appendChild(foodprice);
     parent.appendChild(item);
   }
