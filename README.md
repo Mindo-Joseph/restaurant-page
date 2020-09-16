@@ -29,7 +29,6 @@ The main goal of this project is for the student to show the understanding of th
 * Checkout to the feature branch by ```git checkout feature-restaurant-page```
 * Install dependencies by running ```npm i``` in your terminal
 * Run webpack build by using the following command ```npm run build```
-* 
 
 
 ### Usage
